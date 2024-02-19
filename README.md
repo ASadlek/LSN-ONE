@@ -12,3 +12,6 @@ Follow these commands to run the application:
 ```bash
 mvn compile
 mvn exec:java
+```
+
+You can try with providing sample input from https://backend-tasks.lsn.io/

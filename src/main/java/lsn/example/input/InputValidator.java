@@ -23,7 +23,7 @@ public class InputValidator {
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher = regex.matcher(input);
         if (!matcher.matches()) {
-            throw new IOException("Enter numbers separated by spaces! Other signs are not allowed!");
+            throw new IOException("Enter ONLY numbers separated by spaces! No other symbols are permitted!");
         }
     }
 }

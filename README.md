@@ -14,4 +14,6 @@ mvn compile
 mvn exec:java
 ```
 
-You can try with providing sample input from https://backend-tasks.lsn.io/
+You can try by providing sample input from https://backend-tasks.lsn.io/
+
+In case of any issues, please contact andre.sadlek@gmail.com :)

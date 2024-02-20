@@ -14,6 +14,8 @@ mvn compile
 mvn exec:java
 ```
 
+Only integer values are allowed (from -2,147,483,648 to 2,147,483,647).
+
 You can try by providing sample input from https://backend-tasks.lsn.io/
 
 In case of any issues, please contact andre.sadlek@gmail.com :)

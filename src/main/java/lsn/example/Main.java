@@ -17,11 +17,11 @@ public class Main {
         while (true) {
             try {
                 String input = readService.readInput();
-                inputValidator.validateInput(input);
                 if (input.equalsIgnoreCase("exit")) {
                     printService.printExit();
                     break;
                 }
+                inputValidator.validateInput(input);
                 proceeder.processInput(input);
             } catch (Exception exception) {
                 printService.printExceptionMessage(exception.getMessage());

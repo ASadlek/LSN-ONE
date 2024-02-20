@@ -1,9 +1,7 @@
 package lsn.example;
 
-import lsn.example.io.InputValidator;
 import lsn.example.io.PrintService;
 
-import java.io.IOException;
 import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
@@ -12,11 +10,9 @@ public class Proceeder {
 
     private static Proceeder instance;
     private final PrintService printService;
-    private final InputValidator inputValidator;
 
     private Proceeder() {
         printService = PrintService.getInstance();
-        inputValidator = InputValidator.getInstance();
     }
 
     public static Proceeder getInstance() {
@@ -26,8 +22,7 @@ public class Proceeder {
         return instance;
     }
 
-    public void processInput(String input) throws IOException, NumberFormatException {
-        inputValidator.validateInput(input);
+    public void processInput(String input) throws NumberFormatException {
         StringTokenizer tokenizer = new StringTokenizer(input);
         int count = tokenizer.countTokens();
         TreeSet<Integer> numbers = new TreeSet<>();

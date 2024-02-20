@@ -1,5 +1,6 @@
-package lsn.example.input;
+package lsn.example;
 
+import lsn.example.io.InputValidator;
 import lsn.example.io.PrintService;
 
 import java.io.IOException;
@@ -7,20 +8,20 @@ import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-public class InputProceeder {
+public class Proceeder {
 
-    private static InputProceeder instance;
+    private static Proceeder instance;
     private final PrintService printService;
     private final InputValidator inputValidator;
 
-    private InputProceeder() {
+    private Proceeder() {
         printService = PrintService.getInstance();
         inputValidator = InputValidator.getInstance();
     }
 
-    public static InputProceeder getInstance() {
+    public static Proceeder getInstance() {
         if (instance == null) {
-            instance = new InputProceeder();
+            instance = new Proceeder();
         }
         return instance;
     }
